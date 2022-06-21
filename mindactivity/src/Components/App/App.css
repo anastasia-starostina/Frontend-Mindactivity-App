@@ -21,6 +21,25 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  align-self: center;
+}
+
+#daddyDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#playPauseRestart {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.timerButton {
+  margin: 10px;
+  
 }
 
 .App-header {

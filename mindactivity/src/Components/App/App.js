@@ -4,7 +4,7 @@ import MyTimer from "../Timer";
 
 function App() {
   const time = new Date();
-  time.setSeconds(time.getSeconds() + 600);
+  time.setSeconds(time.getSeconds() + 300);
   return (
     <>
       <Particle />
