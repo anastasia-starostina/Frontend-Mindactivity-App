@@ -101,14 +101,14 @@ function Particle() {
                 }
             },
             "bubble": {
-                "distance": 250,
-                "size": 0,
+                "distance": 150,
+                "size": -5,
                 "duration": 2,
                 "opacity": 0,
                 "speed": 3
             },
             "repulse": {
-                "distance": 400,
+                "distance": 200,
                 "duration": 0.4
             },
             "push": {
