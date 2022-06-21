@@ -28,7 +28,7 @@ export default function MyTimer({ expiryTimestamp }) {
           onClick={() => {
           // Restarts to 5 minutes timer
           const time = new Date();
-          time.setSeconds(time.getSeconds() + 60);
+          time.setSeconds(time.getSeconds() + 300);
           restart(time, false);
         }}
         >
