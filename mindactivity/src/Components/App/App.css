@@ -1,13 +1,27 @@
 .App {
   text-align: center;
   color: aliceblue;
+  
 }
 
 body {
-  background-color: #232741;
+  background: linear-gradient(132deg, #131224 0%, #0C1445 50%, #5C54A4 90%, #8380a4 100%);
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
-
+.circle {
+  border-style: solid;
+  border-width: 10px;
+  border-color: white;
+  width: 1.8em;
+  height: 1.8em;
+  padding: 2%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .App-header {
   min-height: 100vh;
@@ -19,3 +33,6 @@ body {
   color: white;
 }
 
+/* #tsparticles {
+  background: linear-gradient(90deg, #131224 0%, #0C1445 50%, #5C54A4 90%, #ffffff 100%,)
+} */
