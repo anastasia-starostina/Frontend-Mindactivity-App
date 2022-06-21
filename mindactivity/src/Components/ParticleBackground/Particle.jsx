@@ -66,7 +66,7 @@ function Particle() {
           },
           move: {
             enable: true,
-            speed: 1,
+            speed: 0.5,
             direction: "none",
             random: true,
             straight: false,
@@ -100,13 +100,13 @@ function Particle() {
             },
             bubble: {
               distance: 150,
-              size: -5,
+              size: 8,
               duration: 2,
               opacity: 0,
-              speed: 3,
+              speed: 2,
             },
             repulse: {
-              distance: 200,
+              distance: 250,
               duration: 0.4,
             },
             push: {
