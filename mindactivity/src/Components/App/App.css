@@ -74,6 +74,27 @@ body {
       max-width: auto;
 }
 
+#resetButton:hover {
+  background-color: #ffb7a2e8;
+  box-shadow: 0px 15px 20px #232F3E;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+#startPauseButton:hover {
+  background-color: #c3809a;
+  box-shadow: 0px 15px 20px #232F3E;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.sound-button:hover {
+  background-color: #fba55a;
+  box-shadow: 0px 15px 20px #232F3E;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
 .App-header {
   min-height: 100vh;
   display: flex;
