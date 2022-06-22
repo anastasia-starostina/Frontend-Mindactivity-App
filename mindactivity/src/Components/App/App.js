@@ -23,7 +23,8 @@ function App() {
     setAffirmations([...data.payload]);
   };
 
-  console.log(affirmations[0].content);
+  let firstItem = { ...affirmations[25] };
+  console.log(firstItem.content);
 
   return (
     <>
@@ -31,7 +32,7 @@ function App() {
       <div>
         <h1 className="App">Mindactivity</h1>
         <MyTimer expiryTimestamp={time} />
-        <Quote quote={affirmations[3].content} />
+        <Quote quote={firstItem.content} />
       </div>
     </>
   );
