@@ -3,7 +3,6 @@ import "./App.css";
 import React from "react";
 import MyTimer from "../Timer";
 import Quote from "../Quote Element/Quote";
-import SoundButton from "../Button";
 
 
 function App() {
@@ -37,7 +36,6 @@ function App() {
         <h1 className="App">Mindactivity</h1>
         <MyTimer expiryTimestamp={time} />
         <Quote quote={firstItem.content} />
-        <SoundButton />
       </div>
     </>
   );
