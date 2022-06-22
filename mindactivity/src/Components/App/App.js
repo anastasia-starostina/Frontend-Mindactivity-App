@@ -1,6 +1,7 @@
 import Particle from "../ParticleBackground/Particle";
 import "./App.css";
 import MyTimer from "../Timer";
+import Quote from "../Quote Element/Quote";
 
 function App() {
   const time = new Date();
@@ -11,8 +12,8 @@ function App() {
       <div>
         <h1 className="App">Mindactivity</h1>
         <MyTimer expiryTimestamp={time} />
-      </div>
-    </>
+        <Quote />
+      </div></>
   );
 }
 
