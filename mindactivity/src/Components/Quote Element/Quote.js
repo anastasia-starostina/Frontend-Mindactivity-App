@@ -1,12 +1,13 @@
 import React from "react";
 
-//fetch request to get a quote to render in the quote component
+      const newIndex = Math.floor(Math.random() * 100) //UU ID
+      console.log(newIndex);
 
 const Quote = (props) => {
   return (
-    <div class="blockquote-wrapper">
+    <div class="blockquote-wrapper" id='#effect-shine'>
       <div class="blockquote">
-        <h1>{props.quote}</h1>
+        <p>{props.quote}</p>
       </div>
     </div>
   );
