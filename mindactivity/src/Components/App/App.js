@@ -3,8 +3,7 @@ import "./App.css";
 import React from "react";
 import MyTimer from "../Timer";
 import Quote from "../Quote Element/Quote";
-import SoundButton from "../Button";
-
+import PlayButton from "../Button";
 
 function App() {
   const time = new Date();
@@ -37,7 +36,7 @@ function App() {
         <h1 className="App">Mindactivity</h1>
         <MyTimer expiryTimestamp={time} />
         <Quote quote={firstItem.content} />
-        <SoundButton />
+        <PlayButton />
       </div>
     </>
   );
