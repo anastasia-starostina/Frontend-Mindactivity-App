@@ -33,7 +33,7 @@ function App() {
     <>
       <Particle />
       <div>
-        <h1 className="App">Mindactivity</h1>
+        <h1 className="App">✨Mindactivity✨</h1>
         <MyTimer expiryTimestamp={time} />
         <Quote quote={firstItem.content} />
       </div>
