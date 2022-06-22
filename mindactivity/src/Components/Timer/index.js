@@ -2,14 +2,7 @@ import React from "react";
 import { useTimer } from "react-timer-hook";
 
 export default function MyTimer({ expiryTimestamp }) {
-  const {
-    seconds,
-    minutes,
-    isRunning,
-    pause,
-    resume,
-    restart,
-  } = useTimer({
+  const { seconds, minutes, isRunning, pause, resume, restart } = useTimer({
     expiryTimestamp,
     onExpire: () => console.warn("onExpire called"),
   });
@@ -20,25 +13,30 @@ export default function MyTimer({ expiryTimestamp }) {
         <span>{minutes}</span>:<span>{seconds}</span>
       </div>
       <div id="playPauseRestart">
-        <button className="timerButton" onClick={isRunning ? pause : resume}>
+        <button
+          className="timerButton"
+          id="startPauseButton"
+          onClick={isRunning ? pause : resume}
+        >
           {isRunning ? "Pause" : "Start"}
         </button>
-      
-        <button className="timerButton"
+
+        <button
+          className="timerButton"
+          id="resetButton"
           onClick={() => {
-          // Restarts to 5 minutes timer
-          const time = new Date();
-          time.setSeconds(time.getSeconds() + 300);
-          restart(time, false);
-        }}
+            // Restarts to 5 minutes timer
+            const time = new Date();
+            time.setSeconds(time.getSeconds() + 300);
+            restart(time, false);
+          }}
         >
-        Restart
+          Reset
         </button>
       </div>
     </div>
   );
 }
-
 
 /* <button id="addTime" onClick={() => {
           // Restarts to 5 minutes timer
