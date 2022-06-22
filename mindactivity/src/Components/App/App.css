@@ -181,3 +181,8 @@ body {
   padding-top: 20px;
   z-index: 1;
 }
+
+.blogpost {
+      color: aliceblue;
+      font-family: 'Montserrat', sans-serif;
+}

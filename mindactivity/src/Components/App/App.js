@@ -3,6 +3,7 @@ import "./App.css";
 import React from "react";
 import MyTimer from "../Timer";
 import Quote from "../Quote Element/Quote";
+import Blogpost from '../Blogpost/index'
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
         <h1 className="App">✨Mindactivity✨</h1>
         <MyTimer expiryTimestamp={time} />
         <Quote quote={firstItem.content} />
+        <Blogpost/>
       </div>
     </>
   );
