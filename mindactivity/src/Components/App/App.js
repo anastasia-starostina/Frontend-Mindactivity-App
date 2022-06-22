@@ -33,11 +33,13 @@ function App() {
   return (
     <>
       <Particle />
-      <div>
-        <h1 className="App">✨Mindactivity✨</h1>
-        <MyTimer expiryTimestamp={time} />
-        <Quote quote={firstItem.content} />
-        <Blogpost/>
+      <div className='page-container'>
+        <div className='Mindactivity-container'>
+          <h1 className="App">✨Mindactivity✨</h1>
+          <MyTimer expiryTimestamp={time} />
+          <Quote quote={firstItem.content} />
+        </div>
+       <Blogpost/>
       </div>
     </>
   );

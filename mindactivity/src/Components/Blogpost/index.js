@@ -2,7 +2,7 @@ import React from 'react'
 
 const blog = {
   title: "Tips to Avoid Coding Bootcamp Burnout",
-  author: "by Bethanny Parker",
+  author: "Bethanny Parker",
   datePosted: "August 26, 2021",
   content:
     "Coding bootcamp burnout can happen to anyone, even the most resilient of students. The best way to avoid burning out during a bootcamp is to prepare ahead of time. Getting a good night's sleep every night can reduce stress and burnout. Because students must learn so many new things in such a short amount of time, coding bootcamps can be very challenging. Students encounter new material every day, and there is almost always homework, which may keep them up late into the night. Additionally, most bootcamps maintain a rigorous schedule that makes it extremely difficult to catch up if you fall behind. This stressful environment can lead some students to develop mental exhaustion, also known as burnout. You may think that as a strong student this won't apply to you. But coding bootcamp burnout can happen to anyone.",
