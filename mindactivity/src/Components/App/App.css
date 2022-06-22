@@ -9,7 +9,7 @@
 body {
   background: linear-gradient(132deg, #131224 0%, #0C1445 50%, #5C54A4 90%, #8380a4 100%);
   background-repeat: no-repeat;
-  min-height: 100vh;
+  min-height: 110vh;
 }
 
 .circle {
@@ -76,8 +76,10 @@ body {
 /* center the blockquote in the page */
 .blockquote-wrapper {
   display: flex;
-  height: 100vh;
+  height: 40vh;
   padding: 0 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Blockquote main style */
@@ -90,11 +92,12 @@ body {
   width: 100%;
   max-width: 500px;
   z-index: 1;
-  margin-left: 300px;
-  margin-bottom: 500px;
+  /* margin-left: 300px;
+  margin-bottom: 500px; */
   align-self: center;
   border-top: solid 1px;
   border-bottom: solid 1px;
+  
 }
 
 /* Blockquote header */

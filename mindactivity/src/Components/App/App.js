@@ -23,10 +23,8 @@ function App() {
     setAffirmations([...data.payload]);
   };
 
-  const randomIndex = Math.floor(Math.random() * 50); 
+  const randomIndex = Math.floor(Math.random() * 50);
   console.log(randomIndex);
-
-
   let firstItem = { ...affirmations[randomIndex] };
   // console.log(firstItem.content);
 
