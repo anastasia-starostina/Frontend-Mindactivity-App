@@ -37,18 +37,31 @@ body {
   margin-top: 20px;
 }
 
-.timerButton {
+/* .timerButton {
   margin: 10px;
   background-color: white;
-  border: none;
-  border-radius: 25%;
+  border-radius: 50%;
   color: black;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+} */
+
+.timerButton {
+  background-color: white;
+  font-size: 14px;
+  padding: 0.5em 1em;
+  margin: 0.25em;
+  border: none;
+  outline: none;
+  border-radius: 1em;
+  max-width: auto;
+
 }
+
+
 
 .App-header {
   min-height: 100vh;
