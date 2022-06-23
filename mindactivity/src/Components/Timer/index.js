@@ -2,6 +2,11 @@ import React from "react";
 import { useTimer } from "react-timer-hook";
 import { Howl } from "howler";
 
+const sound = new Howl({
+    src: ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"],
+    html5: true,
+  });
+  
 export default function MyTimer({ expiryTimestamp }) {
   const { seconds, minutes, isRunning, pause, resume, restart } = useTimer({
     expiryTimestamp,
@@ -9,14 +14,11 @@ export default function MyTimer({ expiryTimestamp }) {
   });
 
   //Storing a sound file in source
-  const sound = new Howl({
-    src: ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"],
-    html5: true,
-  });
+  
 
-  function togglePlay() {
-    return sound.playing() ? sound.pause() : sound.play();
-  }
+  // function togglePlay() {
+  //   return sound.playing() ? sound.pause() : sound.play();
+  // }
 
   return (
     <div id="daddyDiv" style={{ textAlign: "center", color: "#FFFFFF" }}>
@@ -45,9 +47,7 @@ export default function MyTimer({ expiryTimestamp }) {
         </button>
         <button
           className="sound-button"
-          onClick={togglePlay}
-          // onClick={() => sound.play()}
-          // onDoubleClick={() => sound.pause()}
+          onClick={() => sound.playing() ? sound.pause() : sound.play()}
         >
           Music
         </button>
