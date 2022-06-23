@@ -11,13 +11,12 @@ function App() {
   const [affirmations, setAffirmations] = React.useState([
     { content: undefined },
   ]);
-  const [blogs, setBlogs] = React.useState([])
+  const [blogs, setBlogs] = React.useState([]);
 
   React.useEffect(() => {
     fetchAffirmations();
     fetchBlogs();
   }, []);
-
 
   const fetchAffirmations = async () => {
     const response = await fetch("http://localhost:3001/mindactivity");
@@ -30,18 +29,18 @@ function App() {
     const response = await fetch("http://localhost:3001/blogs");
     const data = await response.json();
     setBlogs([...data.payload]);
-  }
+  };
 
   const randomIndex = Math.floor(Math.random() * 50);
   console.log(randomIndex);
 
   const randomBlogIndex = Math.floor(Math.random() * 3);
-  console.log(randomBlogIndex)
+  console.log(randomBlogIndex);
 
   let firstItem = { ...affirmations[randomIndex] };
 
-  let firstBlog = { ...blogs[randomBlogIndex]}
-  console.log(firstBlog)
+  let firstBlog = { ...blogs[randomBlogIndex] };
+  console.log(firstBlog);
   console.log(firstBlog.imgageSrc);
 
   return (
