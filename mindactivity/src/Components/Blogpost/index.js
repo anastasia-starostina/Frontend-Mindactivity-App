@@ -10,24 +10,24 @@ const blog = {
   imageAlt: "Some text",
   comments: [1, 2, 3],
 };
-const Blogpost = () => {
+const Blogpost = (prop) => {
   return (
     <div>
       <div className="blogpost">
         <header className="header">
           <h1 className="title">
-            <i>{blog.title}</i>
+            <i>{prop.title}</i>
           </h1>
-          <h2 className="article-author">By {blog.author}</h2>
-          <p className="date-posted">{blog.datePosted}</p>
+          <h2 className="article-author">By {prop.author}</h2>
+          <p className="date-posted">{prop.datePosted}</p>
         </header>
         <article className="article">
-          <p>{blog.content}</p>
+          <p>{prop.content}</p>
           <img
             className="picture"
-            src={blog.imageSrc}
+            src={prop.imageSrc}
             width="600px"
-            alt={"Photo of" + blog.title}
+            alt={"Photo of" + prop.title}
           />
         </article>
       </div>

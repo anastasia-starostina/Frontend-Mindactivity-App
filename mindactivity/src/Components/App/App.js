@@ -53,7 +53,7 @@ function App() {
           <Quote quote={firstItem.content} />
         </div>
         <div className="blogpost-container">
-          <Blogpost />
+          <Blogpost blog={firstBlog.title}/>
         </div>
       </div>
     </>
