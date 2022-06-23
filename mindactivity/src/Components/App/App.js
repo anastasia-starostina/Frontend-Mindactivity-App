@@ -2,7 +2,7 @@ import Particle from "../ParticleBackground/Particle";
 import "./App.css";
 import React from "react";
 import MyTimer from "../Timer";
-import Quote from "../Quote Element/Quote";
+import Quote from "../Quote Element";
 import Blogpost from "../Blogpost/index";
 function App() {
   const time = new Date();
