@@ -27,7 +27,7 @@ function App() {
   };
 
   const fetchBlogs = async () => {
-    const response = await fetch("http://localhost:3001/mindactivity/blogs");
+    const response = await fetch("http://localhost:3001/blogs");
     const data = await response.json();
     setBlogs([...data.payload]);
   }
@@ -39,9 +39,10 @@ function App() {
   console.log(randomBlogIndex)
 
   let firstItem = { ...affirmations[randomIndex] };
-  // console.log(firstItem.content);
 
   let firstBlog = { ...blogs[randomBlogIndex]}
+  console.log(firstBlog)
+  console.log(firstBlog.imgageSrc);
 
   return (
     <>
@@ -53,7 +54,13 @@ function App() {
           <Quote quote={firstItem.content} />
         </div>
         <div className="blogpost-container">
-          <Blogpost blog={firstBlog.title}/>
+          <Blogpost
+            title={firstBlog.title}
+            author={firstBlog.author}
+            date={firstBlog.date}
+            content={firstBlog.content}
+            alt={firstBlog.title}
+          />
         </div>
       </div>
     </>
