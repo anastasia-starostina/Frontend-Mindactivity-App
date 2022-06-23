@@ -15,7 +15,7 @@ function App() {
 
   React.useEffect(() => {
     fetchAffirmations();
-    fetchBlogs();
+    // fetchBlogs();
   }, []);
 
 
@@ -26,11 +26,11 @@ function App() {
     setAffirmations([...data.payload]);
   };
 
-  const fetchBlogs = async () => {
-    const response = await fetch("http://localhost:3001/mindactivity/blogs");
-    const data = await response.json();
-    setBlogs([...data.payload]);
-  }
+  // const fetchBlogs = async () => {
+  //   const response = await fetch("http://localhost:3001/mindactivity/blogs");
+  //   const data = await response.json();
+  //   setBlogs([...data.payload]);
+  // }
 
   const randomIndex = Math.floor(Math.random() * 50);
   console.log(randomIndex);
@@ -42,7 +42,7 @@ function App() {
   // console.log(firstItem.content);
 
   let firstBlog = { ...blogs[randomBlogIndex]}
-
+  console.log('this is our blog', blogs)
   return (
     <>
       <Particle />
