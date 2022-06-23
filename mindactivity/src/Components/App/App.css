@@ -1,15 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
+
 
 .App {
   text-align: center;
   color: aliceblue;
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
   
+}
+
+h1 {
+  font-size: 60px;
 }
 
 body {
   background: linear-gradient(132deg, #131224 0%, #0C1445 50%, #5C54A4 90%, #8380a4 100%);
   background-repeat: no-repeat;
   min-height: 110vh;
+  font-family: Montserrat;
 }
 
 .circle {
@@ -24,6 +34,7 @@ body {
   align-items: center;
   justify-content: center;
   align-self: center;
+  font-weight: 100;
 }
 
 #daddyDiv {
@@ -37,6 +48,7 @@ body {
   display: flex;
   flex-direction: row;
   margin-top: 20px;
+  
 }
 
 /* .timerButton {
@@ -60,6 +72,8 @@ body {
   outline: none;
   border-radius: 1em;
   max-width: auto;
+  font-family: "Montserrat Alternates";
+  font-weight: 400
 
 }
 
@@ -85,8 +99,8 @@ body {
 /* Blockquote main style */
 .blockquote {
   position: relative;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 100;
   color: #ffffff;
   padding: 30px 0;
   width: 100%;
@@ -105,7 +119,8 @@ body {
   position: relative;
   color: #FFFFFF;
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 200;
+  font-style: italic;
   line-height: 1;
   margin: 0;
 }
