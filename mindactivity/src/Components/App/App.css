@@ -34,7 +34,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width:600px
+  /* width:600px */
 }
 
 #playPauseRestart {
@@ -186,24 +186,30 @@ body {
 .blogpost {
       color: aliceblue;
       font-family: 'Montserrat', sans-serif;
+      line-height: 1.4em;
 }
 
-.page-container {
+/* .page-container {
   display: flex;
   flex-direction: row;
-}
+} */
 
-.mindactivity-container {
+/* .mindactivity-container {
 
+} */
+
+.blogpost-container {
+  display: flex;
+  justify-content: center
 }
 
 .blogpost {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   width: 500px;
-  padding-left: 150px;
   color: aliceblue;
 }
  .picture {
-
+max-width: 480px;
  }
+
