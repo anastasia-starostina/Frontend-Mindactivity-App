@@ -22,6 +22,7 @@ export default function MyTimer({ expiryTimestamp }) {
         <button
           className="timerButton"
           id="startPauseButton"
+          aria-label = "startPauseButton"
           onClick={isRunning ? pause : resume}
         >
           {isRunning ? "Pause" : "Start"}

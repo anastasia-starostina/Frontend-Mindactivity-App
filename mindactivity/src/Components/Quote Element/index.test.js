@@ -7,3 +7,11 @@ test("testing whether the Quote component renders", async () => {
   let quote = screen.getByRole("note");
   expect(quote).toBeInTheDocument();
 });
+
+
+test("testing whether a specific Quote component renders", async () => {
+  let exampleQuote = "example text";
+  render(<Quote quote = {exampleQuote} />);
+  let testComponent = screen.getByRole("note");
+  expect(testComponent).toHaveTextContent("example text");
+});
