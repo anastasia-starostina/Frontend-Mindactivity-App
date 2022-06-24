@@ -3,18 +3,20 @@ import { useTimer } from "react-timer-hook";
 import { Howl } from "howler";
 
 const sound = new Howl({
-    src: ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"],
-    html5: true,
-  });
-  
+  src: ["https://audio.jukehost.co.uk/SVYsiy5dhtvfsx41xbrNCR1QbR6egZ9l"],
+  html5: true,
+  // https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
+});
+
 export default function MyTimer({ expiryTimestamp }) {
-  const { seconds, minutes, isRunning, pause, resume, restart } = useTimer({
-    expiryTimestamp,
-    onExpire: () => console.warn("onExpire called"),
-  });
+  const { autoStart, seconds, minutes, isRunning, pause, resume, restart } =
+    useTimer({
+      expiryTimestamp,
+      onExpire: () => console.warn("onExpire called"),
+      autoStart: false,
+    });
 
   //Storing a sound file in source
-  
 
   // function togglePlay() {
   //   return sound.playing() ? sound.pause() : sound.play();
@@ -29,7 +31,7 @@ export default function MyTimer({ expiryTimestamp }) {
         <button
           className="timerButton"
           id="startPauseButton"
-          aria-label = "startPauseButton"
+          aria-label="startPauseButton"
           onClick={isRunning ? pause : resume}
         >
           {isRunning ? "Pause" : "Start"}
@@ -48,7 +50,7 @@ export default function MyTimer({ expiryTimestamp }) {
         </button>
         <button
           className="sound-button"
-          onClick={() => sound.playing() ? sound.pause() : sound.play()}
+          onClick={() => (sound.playing() ? sound.pause() : sound.play())}
         >
           Music
         </button>

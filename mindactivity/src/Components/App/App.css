@@ -44,17 +44,6 @@ body {
   margin-top: 20px;
   
 }
-/* .timerButton {
-  margin: 10px;
-  background-color: white;
-  border-radius: 50%;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-} */
 .timerButton {
   background-color: white;
   font-size: 14px;
@@ -151,6 +140,7 @@ body {
   margin: 0;
   font-family: 'Montserrat Alternates', sans-serif;
   font-style: italic;
+  
 }
 /* Blockquote right double quotes */
 .blockquote:after {
@@ -183,6 +173,7 @@ body {
       color: aliceblue;
       font-family: 'Montserrat', sans-serif;
       line-height: 1.4em;
+      margin-top: 150px;
 }
 /* .page-container {
   display: flex;
@@ -199,7 +190,12 @@ body {
   font-size: 16px;
   width: 500px;
   color: aliceblue;
+  
 }
  .picture {
 max-width: 480px;
+ }
+
+ .blogpost h1 {
+  line-height: 1.25em;
  }
