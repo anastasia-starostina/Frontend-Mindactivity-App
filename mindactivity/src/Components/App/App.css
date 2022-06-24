@@ -5,6 +5,9 @@
   color: aliceblue;
   letter-spacing: 3px;
   font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 70px;
+  font-weight: 400;
+  margin-top: 20px;
 }
 body {
   background: linear-gradient(132deg, #131224 0%, #0C1445 50%, #5C54A4 90%, #8380A4 100%);
@@ -38,17 +41,6 @@ body {
   flex-direction: row;
   margin-top: 20px;
 }
-/* .timerButton {
-  margin: 10px;
-  background-color: white;
-  border-radius: 50%;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-} */
 .timerButton {
   background-color: white;
   font-size: 14px;
@@ -72,8 +64,16 @@ body {
       border-radius: 1em;
       max-width: auto;
       letter-spacing: 1px;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
+      font-family: 'Montserrat Alternates', sans-serif;
+      font-weight: 500;
+}
+#resetButton {
+  font-family: 'Montserrat Alternates', sans-serif;
+      font-weight: 500;
+}
+#startPauseButton {
+  font-family: 'Montserrat Alternates', sans-serif;
+      font-weight: 500;
 }
 #resetButton:hover {
   background-color: #ffb7a2e8;
@@ -114,7 +114,7 @@ body {
 .blockquote {
   position: relative;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
+  font-weight: 100;
   color: #FFFFFF;
   padding: 30px 0;
   width: 100%;
@@ -131,9 +131,11 @@ body {
   position: relative;
   color: #FFFFFF;
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 100;
   line-height: 1;
   margin: 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-style: italic;
 }
 /* Blockquote right double quotes */
 .blockquote:after {
@@ -166,6 +168,7 @@ body {
       color: aliceblue;
       font-family: 'Montserrat', sans-serif;
       line-height: 1.4em;
+      margin-top: 150px;
 }
 /* .page-container {
   display: flex;
@@ -185,4 +188,7 @@ body {
 }
  .picture {
 max-width: 480px;
+ }
+ .blogpost h1 {
+  line-height: 1.25em;
  }
