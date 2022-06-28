@@ -5,6 +5,18 @@ import MyTimer from "../Timer";
 import Quote from "../Quote Element";
 import Blogpost from "../Blogpost/index";
 
+/*
+- Rename firstBlog and firstItem to currentBlog and currentIte,
+- Refactor Blogpost component to <BlogPost props={firstBlog} /> 
+- Add conditional rendering to the image 
+- git ignore -- node modules 
+- Refactor Timer Buttons and put in separate components
+- Howler is imported twice in index.js in Button and Timer
+- delete hard coded blog*/
+
+
+
+
 function App() {
   const time = new Date();
   time.setSeconds(time.getSeconds() + 300);
