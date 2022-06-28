@@ -6,16 +6,14 @@ import Quote from "../Quote Element";
 import Blogpost from "../Blogpost/index";
 
 /*
-- Rename firstBlog and firstItem to currentBlog and currentIte,
-- Refactor Blogpost component to <BlogPost props={firstBlog} /> 
+- Rename firstBlog and currentItem to currentBlog and currentIte ✅ 
+- Refactor Blogpost component to <BlogPost props={firstBlog} /> ✅ 
 - Add conditional rendering to the image 
 - git ignore -- node modules 
 - Refactor Timer Buttons and put in separate components
 - Howler is imported twice in index.js in Button and Timer
-- delete hard coded blog*/
-
-
-
+- delete hard coded blog
+- Refactor folder structure at root level (e.g. we don't need 2 gitignores or package.json- pay attention to howler)*/
 
 function App() {
   const time = new Date();
@@ -49,11 +47,11 @@ function App() {
   const randomBlogIndex = Math.floor(Math.random() * 3);
   console.log(randomBlogIndex);
 
-  let firstItem = { ...affirmations[randomIndex] };
+  let currentItem = { ...affirmations[randomIndex] };
 
-  let firstBlog = { ...blogs[randomBlogIndex] };
-  console.log(firstBlog);
-  console.log(firstBlog.imgageSrc);
+  let currentBlog = { ...blogs[randomBlogIndex] };
+  console.log(currentBlog);
+  console.log(currentBlog.imgageSrc);
 
   return (
     <>
@@ -62,16 +60,10 @@ function App() {
         <div className="Mindactivity-container">
           <h1 className="App">Mindactivity</h1>
           <MyTimer expiryTimestamp={time} />
-          <Quote quote={firstItem.content} />
+          <Quote quote={currentItem.content} />
         </div>
         <div className="blogpost-container">
-          <Blogpost
-            title={firstBlog.title}
-            author={firstBlog.author}
-            date={firstBlog.date}
-            content={firstBlog.content}
-            alt={firstBlog.title}
-          />
+          <Blogpost {...currentBlog} />
         </div>
       </div>
     </>
