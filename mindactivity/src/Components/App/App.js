@@ -20,14 +20,15 @@ function App() {
   }, []);
 
   const fetchAffirmations = async () => {
-    const response = await fetch("http://localhost:3001/mindactivity");
+    const response = await fetch("http://localhost:3001/v1/mindactivity");
     const data = await response.json();
     // console.log(`this is data: ${data}`);
     setAffirmations([...data.payload]);
   };
 
+
   const fetchBlogs = async () => {
-    const response = await fetch("http://localhost:3001/blogs");
+    const response = await fetch("http://localhost:3001/v1/blogs");
     const data = await response.json();
     setBlogs([...data.payload]);
   };
