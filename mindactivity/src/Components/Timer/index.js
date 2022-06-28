@@ -11,11 +11,11 @@ export default function MyTimer({ expiryTimestamp }) {
   });
 
   return (
-    <div id="daddyDiv" style={{ textAlign: "center", color: "#FFFFFF" }}>
-      <div className="circle" style={{ fontSize: "100px" }}>
+    <div id="global-timer-div">
+      <div className="circle">
         <span>{minutes}</span>:<span>{seconds}</span>
       </div>
-      <div id="playPauseRestart">
+      <div id="buttons-div">
         <TimerButton
           id="startPauseButton"
           ariaLabel="startPauseButton"
@@ -34,9 +34,10 @@ export default function MyTimer({ expiryTimestamp }) {
         >
           Reset
         </TimerButton>
-        <button className="sound-button" onClick={musicFunctionality}>
+
+        <TimerButton id="sound-button" onClick={musicFunctionality}>
           Music
-        </button>
+        </TimerButton>
       </div>
     </div>
   );

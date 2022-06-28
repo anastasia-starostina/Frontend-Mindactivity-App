@@ -54,14 +54,12 @@ function App() {
   console.log(currentBlog);
   console.log(currentBlog.imgageSrc);
 
-
-
   return (
     <>
       <Particle />
       <div className="page-container">
         <div className="Mindactivity-container">
-          <h1 className="App">Mindactivity</h1>
+          <h1 className="page-title">Mindactivity</h1>
           <MyTimer expiryTimestamp={time} />
           <Quote quote={currentItem.content} />
         </div>
