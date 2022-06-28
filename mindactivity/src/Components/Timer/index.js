@@ -8,12 +8,11 @@ const sound = new Howl({
   html5: true,
 });
 export default function MyTimer({ expiryTimestamp }) {
-  const { seconds, minutes, isRunning, pause, resume, restart } =
-    useTimer({
-      expiryTimestamp,
-      onExpire: () => console.warn("onExpire called"),
-      autoStart: false,
-    });
+  const { seconds, minutes, isRunning, pause, resume, restart } = useTimer({
+    expiryTimestamp,
+    onExpire: () => console.warn("onExpire called"),
+    autoStart: false,
+  });
 
   return (
     <div id="daddyDiv" style={{ textAlign: "center", color: "#FFFFFF" }}>
@@ -22,14 +21,13 @@ export default function MyTimer({ expiryTimestamp }) {
       </div>
       <div id="playPauseRestart">
         <TimerButton
-          className="timerButton"
           id="startPauseButton"
-          aria-label="startPauseButton"
-          onClick={isRunning ? pause : resume}>
+          ariaLabel="startPauseButton"
+          onClick={isRunning ? pause : resume}
+        >
           {isRunning ? "Pause" : "Start"}
         </TimerButton>
-        <button
-          className="timerButton"
+        <TimerButton
           id="resetButton"
           onClick={() => {
             // Restarts to 5 minutes timer
@@ -39,7 +37,7 @@ export default function MyTimer({ expiryTimestamp }) {
           }}
         >
           Reset
-        </button>
+        </TimerButton>
         <button
           className="sound-button"
           onClick={() => (sound.playing() ? sound.pause() : sound.play())}
