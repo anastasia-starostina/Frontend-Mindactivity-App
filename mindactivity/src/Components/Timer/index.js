@@ -1,38 +1,29 @@
 import React from "react";
 import { useTimer } from "react-timer-hook";
-import { Howl } from "howler";
-const sound = new Howl({
-  src: ["https://audio.jukehost.co.uk/SVYsiy5dhtvfsx41xbrNCR1QbR6egZ9l"],
-  html5: true,
-  // https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
-});
+import TimerButton from "../TimerButton";
+import musicFunctionality from "../Sound";
+
 export default function MyTimer({ expiryTimestamp }) {
-  const { seconds, minutes, isRunning, pause, resume, restart } =
-    useTimer({
-      expiryTimestamp,
-      onExpire: () => console.warn("onExpire called"),
-      autoStart: false,
-    });
-  //Storing a sound file in source
-  // function togglePlay() {
-  //   return sound.playing() ? sound.pause() : sound.play();
-  // }
+  const { seconds, minutes, isRunning, pause, resume, restart } = useTimer({
+    expiryTimestamp,
+    onExpire: () => console.warn("onExpire called"),
+    autoStart: false,
+  });
+
   return (
-    <div id="daddyDiv" style={{ textAlign: "center", color: "#FFFFFF" }}>
-      <div className="circle" style={{ fontSize: "100px" }}>
+    <div id="global-timer-div">
+      <div className="circle">
         <span>{minutes}</span>:<span>{seconds}</span>
       </div>
-      <div id="playPauseRestart">
-        <button
-          className="timerButton"
+      <div id="buttons-div">
+        <TimerButton
           id="startPauseButton"
-          aria-label="startPauseButton"
+          ariaLabel="startPauseButton"
           onClick={isRunning ? pause : resume}
         >
           {isRunning ? "Pause" : "Start"}
-        </button>
-        <button
-          className="timerButton"
+        </TimerButton>
+        <TimerButton
           id="resetButton"
           onClick={() => {
             // Restarts to 5 minutes timer
@@ -42,13 +33,11 @@ export default function MyTimer({ expiryTimestamp }) {
           }}
         >
           Reset
-        </button>
-        <button
-          className="sound-button"
-          onClick={() => (sound.playing() ? sound.pause() : sound.play())}
-        >
+        </TimerButton>
+
+        <TimerButton id="sound-button" onClick={musicFunctionality}>
           Music
-        </button>
+        </TimerButton>
       </div>
     </div>
   );

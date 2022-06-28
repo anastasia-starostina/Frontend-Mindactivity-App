@@ -5,6 +5,7 @@ import MyTimer from "../Timer";
 import Quote from "../Quote Element";
 import Blogpost from "../Blogpost/index";
 
+
 function App() {
   const time = new Date();
   time.setSeconds(time.getSeconds() + 300);
@@ -37,29 +38,23 @@ function App() {
   const randomBlogIndex = Math.floor(Math.random() * 3);
   console.log(randomBlogIndex);
 
-  let firstItem = { ...affirmations[randomIndex] };
+  let currentItem = { ...affirmations[randomIndex] };
 
-  let firstBlog = { ...blogs[randomBlogIndex] };
-  console.log(firstBlog);
-  console.log(firstBlog.imgageSrc);
+  let currentBlog = { ...blogs[randomBlogIndex] };
+  console.log(currentBlog);
+  console.log(currentBlog.imgageSrc);
 
   return (
     <>
       <Particle />
       <div className="page-container">
         <div className="Mindactivity-container">
-          <h1 className="App">Mindactivity</h1>
+          <h1 className="page-title">Mindactivity</h1>
           <MyTimer expiryTimestamp={time} />
-          <Quote quote={firstItem.content} />
+          <Quote quote={currentItem.content} />
         </div>
         <div className="blogpost-container">
-          <Blogpost
-            title={firstBlog.title}
-            author={firstBlog.author}
-            date={firstBlog.date}
-            content={firstBlog.content}
-            alt={firstBlog.title}
-          />
+          <Blogpost {...currentBlog} />
         </div>
       </div>
     </>
