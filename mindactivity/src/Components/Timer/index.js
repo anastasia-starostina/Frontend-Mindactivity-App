@@ -1,12 +1,8 @@
 import React from "react";
 import { useTimer } from "react-timer-hook";
-import { Howl } from "howler";
 import TimerButton from "../TimerButton";
+import musicFunctionality from "../Sound";
 
-const sound = new Howl({
-  src: ["https://audio.jukehost.co.uk/SVYsiy5dhtvfsx41xbrNCR1QbR6egZ9l"],
-  html5: true,
-});
 export default function MyTimer({ expiryTimestamp }) {
   const { seconds, minutes, isRunning, pause, resume, restart } = useTimer({
     expiryTimestamp,
@@ -38,10 +34,7 @@ export default function MyTimer({ expiryTimestamp }) {
         >
           Reset
         </TimerButton>
-        <button
-          className="sound-button"
-          onClick={() => (sound.playing() ? sound.pause() : sound.play())}
-        >
+        <button className="sound-button" onClick={musicFunctionality}>
           Music
         </button>
       </div>
