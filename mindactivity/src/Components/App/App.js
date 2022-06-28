@@ -5,16 +5,6 @@ import MyTimer from "../Timer";
 import Quote from "../Quote Element";
 import Blogpost from "../Blogpost/index";
 
-/*
-- Rename firstBlog and currentItem to currentBlog and currentIte ✅ 
-- Refactor Blogpost component to <BlogPost props={firstBlog} /> ✅ 
-- Add conditional rendering to the image 
-- git ignore -- node modules ✅
-- Refactor Timer Buttons and put in separate components ✅
-- Howler is imported twice in index.js in Button and Timer
-- delete hard coded blog ✅
-- Refactor folder structure at root level (e.g. we don't need 2 gitignores or package.json- pay attention to howler) ✅
-- REmove React React favicon and some other default React files and put our own  ✅*/
 
 function App() {
   const time = new Date();
