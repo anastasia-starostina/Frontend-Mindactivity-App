@@ -1,10 +1,11 @@
 import React from "react";
 import { useTimer } from "react-timer-hook";
 import { Howl } from "howler";
+import TimerButton from "../TimerButton";
+
 const sound = new Howl({
   src: ["https://audio.jukehost.co.uk/SVYsiy5dhtvfsx41xbrNCR1QbR6egZ9l"],
   html5: true,
-  // https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
 });
 export default function MyTimer({ expiryTimestamp }) {
   const { seconds, minutes, isRunning, pause, resume, restart } =
@@ -13,24 +14,20 @@ export default function MyTimer({ expiryTimestamp }) {
       onExpire: () => console.warn("onExpire called"),
       autoStart: false,
     });
-  //Storing a sound file in source
-  // function togglePlay() {
-  //   return sound.playing() ? sound.pause() : sound.play();
-  // }
+
   return (
     <div id="daddyDiv" style={{ textAlign: "center", color: "#FFFFFF" }}>
       <div className="circle" style={{ fontSize: "100px" }}>
         <span>{minutes}</span>:<span>{seconds}</span>
       </div>
       <div id="playPauseRestart">
-        <button
+        <TimerButton
           className="timerButton"
           id="startPauseButton"
           aria-label="startPauseButton"
-          onClick={isRunning ? pause : resume}
-        >
+          onClick={isRunning ? pause : resume}>
           {isRunning ? "Pause" : "Start"}
-        </button>
+        </TimerButton>
         <button
           className="timerButton"
           id="resetButton"
