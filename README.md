@@ -2,22 +2,11 @@
 <img src="./assets/Screenshot 2022-06-29 100133.jpg" />
 
 
-## List of Contents
-1. [Introduction](#mindactivity-app-for-managing-stress)
-2. [Features](#features)
-3. [Getting Started](#getting-started)
-4. [Tech Stack](#tech-stack)
-5. [Color Reference](#color-reference)
-6. [Running Tests](#running-tests)
-7. [Authors](#authors)
-8. [Appendix](#appendix)
-
 <br/>
 
 ---
 
 <br />
-
 
 # Mindactivity App For Managing Stress
 
@@ -30,6 +19,24 @@ Just in case you were curious about the name, mindfulness + productivity = minda
 It's a Mindfullness App designed to manage stress levels and increase productivity using meditative media.
 
 **This documentation is for the entire Mindactivity app. If you're interested in the backend/API specifically, go to [backend repository](https://github.com/SchoolOfCode/w9_backend-project-mindactivity)**
+
+
+<br/>
+
+---
+
+<br />
+
+
+## List of Contents
+1. [Introduction](#mindactivity-app-for-managing-stress)
+2. [Features](#features)
+3. [Getting Started](#getting-started)
+4. [Tech Stack](#tech-stack)
+5. [Color Reference](#color-reference)
+6. [Running Tests](#running-tests)
+7. [Authors](#authors)
+8. [Appendix](#appendix)
 
 
 <br/>
@@ -54,7 +61,10 @@ It's a Mindfullness App designed to manage stress levels and increase productivi
 <br />
 
 ## Getting Started
-I. Backend
+
+
+### **Backend** ###
+
 **It is important to get the backend working before you run the frontend in order to use the affirmations and the blog post features*
 1. Git clone the backend repository.
 ```bash
@@ -80,7 +90,8 @@ npm run db:populateTable
 ```bash
   npm run dev
 ```
-II. Frontend
+
+### **Frontend** ###
 
 1. Git clone the frontend repository.
 ```bash
@@ -105,10 +116,14 @@ II. Frontend
 
 
 ## Tech Stack
+
 **Client:** React, CSS, Howler, React-tsparticles
+</br>
 **Server:** Node, Express, PostreSQL
-**Client-side Testing ** React Testing Library
-**Server-side Testing** Supertest, Jest
+</br>
+**Client-side Testing:** React Testing Library
+</br>
+**Server-side Testing:** Supertest, Jest
 
 <br/>
 
@@ -149,7 +164,7 @@ To run tests, run the following command
 
 ## Authors
 
-We are four bootcampers at @theSchoolOfCode who teamed up to build an app to help solve bootcamper burnout problem for our mid-course project.
+We are four bootcampers at [The School Of Code](https://github.com/SchoolOfCode) who teamed up to build an app to help solve bootcamper burnout problem for our mid-course project.
 
 - [@AureaFlamma](https://www.github.com/AureaFlamma)
 - [@EdMark11](https://www.github.com/EdMark11)
@@ -166,6 +181,7 @@ We are four bootcampers at @theSchoolOfCode who teamed up to build an app to hel
 ## Appendix
 </br>
 
+- [React](https://reactjs.org/docs/getting-started.html)
 - [TSParticles Package](https://www.npmjs.com/package/express-generator-esmodules)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 - [Howler](https://www.npmjs.com/package/howler)
