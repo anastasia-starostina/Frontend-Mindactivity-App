@@ -1,3 +1,7 @@
+
+<img src="./assets/Screenshot 2022-06-29 100133.jpg" />
+
+
 ## List of Contents
 1. [Introduction](#mindactivity-app-for-managing-stress)
 2. [Features](#features)
@@ -6,7 +10,13 @@
 5. [Color Reference](#color-reference)
 6. [Running Tests](#running-tests)
 7. [Authors](#authors)
-8. [Acknowledgements](#acknowledgements)
+8. [Appendix](#appendix)
+
+<br/>
+
+---
+
+<br />
 
 
 # Mindactivity App For Managing Stress
@@ -19,13 +29,30 @@ Just in case you were curious about the name, mindfulness + productivity = minda
 
 It's a Mindfullness App designed to manage stress levels and increase productivity using meditative media.
 
-**This documentation is for the entire Mindactivity app. If you're interested in the backend/API specifically, go to https://github.com/SchoolOfCode/w9_backend-project-mindactivity**
+**This documentation is for the entire Mindactivity app. If you're interested in the backend/API specifically, go to [backend repository](https://github.com/SchoolOfCode/w9_backend-project-mindactivity)**
+
+
+<br/>
+
+---
+
+<br />
+
+
+
 ## Features
 - Timer for meditation or exercise.
 - Music button playing calming nature sounds.
 - Daily affirmations randomised and displayed from database.
 - Blog posts also randomised and displayed from database.
 - Click- and hover-interactive background simulating a night sky.
+
+<br/>
+
+---
+
+<br />
+
 ## Getting Started
 I. Backend
 **It is important to get the backend working before you run the frontend in order to use the affirmations and the blog post features*
@@ -70,11 +97,26 @@ II. Frontend
   npm start
 ```
 
+<br/>
+
+---
+
+<br />
+
+
 ## Tech Stack
 **Client:** React, CSS, Howler, React-tsparticles
 **Server:** Node, Express, PostreSQL
 **Client-side Testing ** React Testing Library
 **Server-side Testing** Supertest, Jest
+
+<br/>
+
+---
+
+<br />
+
+
 ## Color Reference
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
@@ -87,12 +129,23 @@ II. Frontend
 | Sandy Brown | ![#FBA55A](https://via.placeholder.com/10/FBA55A?text=+) #FBA55A |
 
 
+<br/>
+
+---
+
+<br />
+
 
 ## Running Tests
 To run tests, run the following command
 ```bash
   npm test
 ```
+<br/>
+
+---
+
+<br />
 
 ## Authors
 
@@ -103,9 +156,16 @@ We are four bootcampers at @theSchoolOfCode who teamed up to build an app to hel
 - [@anastasia-starostina](https://www.github.com/anastasia-starostina)
 - [@Sadie109](https://www.github.com/Sadie109)
 
+<br/>
+
+---
+
+<br />
 
 
-## Acknowledgements
+## Appendix
 </br>
 
-- [TSParticles Package](https://www.npmjs.com/package/express-generator-esmodules))
+- [TSParticles Package](https://www.npmjs.com/package/express-generator-esmodules)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+- [Howler](https://www.npmjs.com/package/howler)
