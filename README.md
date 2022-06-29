@@ -13,7 +13,7 @@
 1. [Introduction](#mindactivity-app-for-managing-stress)
 2. [Features](#features)
 3. [Getting Started](#getting-started)
-4. [Tech Stack](https://github.com/SchoolOfCode/w9_frontend-project-mindactivity/edit/main/README.md#tech-stack%EF%B8%8F)
+4. [Tech Stack](https://github.com/SchoolOfCode/w9_frontend-project-mindactivity/main/README.md#tech-stack%EF%B8%8F)
 5. [Color Reference](#color-reference)
 6. [Running Tests](#running-tests)
 7. [Authors](#authors)
