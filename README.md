@@ -113,6 +113,7 @@ npm run db:populateTable
 
 <br />
 
+<a name="tech-stack"/>
 
 ## ***Tech Stack⚙️***
 
