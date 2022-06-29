@@ -26,7 +26,7 @@
 
 <br />
 
-# Mindactivity App For Managing Stress🧘
+# ***Mindactivity App For Managing Stress🧘***
 
 Welcome to Mindactivity!
 
@@ -46,7 +46,7 @@ It's a Mindfullness App designed to manage stress levels and increase productivi
 <br />
 
 
-## Features🎩
+## ***Features🎩***
 - Timer for meditation or exercise.
 - Music button playing calming nature sounds.
 - Daily affirmations randomised and displayed from database.
@@ -59,7 +59,7 @@ It's a Mindfullness App designed to manage stress levels and increase productivi
 
 <br />
 
-## Getting Started🏁
+## ***Getting Started🏁***
 
 
 ### **Backend** ###
@@ -114,7 +114,7 @@ npm run db:populateTable
 <br />
 
 
-## Tech Stack⚙️
+## ***Tech Stack⚙️***
 
 **Client:** React, CSS, Howler, React-tsparticles
 </br>
@@ -131,7 +131,7 @@ npm run db:populateTable
 <br />
 
 
-## Color Reference🎨
+## ***Color Reference🎨***
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
 | Xiketic | ![#131224](https://via.placeholder.com/10/131224?text=+) #131224 |
@@ -150,7 +150,7 @@ npm run db:populateTable
 <br />
 
 
-## Running Tests🃏
+## ***Running Tests🃏***
 To run tests, run the following command
 ```bash
   npm test
@@ -161,7 +161,7 @@ To run tests, run the following command
 
 <br />
 
-## Authors📚
+## ***Authors📚***
 
 We are four bootcampers at [The School Of Code](https://github.com/SchoolOfCode) who teamed up to build an app to help solve bootcamper burnout problem for our mid-course project.
 
@@ -177,7 +177,7 @@ We are four bootcampers at [The School Of Code](https://github.com/SchoolOfCode)
 <br />
 
 
-## Appendix📝
+## ***Appendix📝***
 </br>
 
 - [React](https://reactjs.org/docs/getting-started.html)
