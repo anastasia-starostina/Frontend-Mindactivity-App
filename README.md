@@ -1,22 +1,111 @@
-# National Bootcamp - Week Nine Project Brief
+## List of Contents
+1. [Introduction](#mindactivity-app-for-managing-stress)
+2. [Features](#features)
+3. [Getting Started](#getting-started)
+4. [Tech Stack](#tech-stack)
+5. [Color Reference](#color-reference)
+6. [Running Tests](#running-tests)
+7. [Authors](#authors)
+8. [Acknowledgements](#acknowledgements)
 
-For your project, you’ll be using what you’ve learned on the course so far to try and improve the lives of your users. In this case, the users will be close to home: bootcampers!
 
-To do this, you’ll need to take the time to understand your user (a bootcamper), their experiences, and their problems. Specifically, it might be good to focus on how to enhance the remote experience of a bootcamper, or what can help them with the vast amount of learning there is to do as a new developer. What do they need? What problem might they have that your application could solve for them? How can you get into the mindset of your user and keep them at the centre of your problem-solving?
+# Mindactivity App For Managing Stress
 
-The high level outcomes from this project should be:
+Welcome to Mindactivity!
 
-- A minimum viable product (MVP) showcasing an innovative full stack application which meets the user need you’ve identified
-- A presentation, complete with how you worked as a team and a demonstration of the project
 
-Your project application might include the following:
+Just in case you were curious about the name, mindfulness + productivity = mindactivity.
 
-- Include a user experience created in React
-- Build a REST API which is used by your front-end
-- Be supported by a Postgresql database with multiple tables
-- Be built and managed in an agile way
-- Utilise testing for ensuring robust code
 
-Remember, you only have a few days to code a solution, so being agile is key. That means brainstorming what you want to build, and working in sprints to deliver value each time. After each sprint, you can reassess and either continue on course or iterate towards a better solution. Have a plan which is incremental steps, rather than all or nothing.
+It's a Mindfullness App designed to manage stress levels and increase productivity using meditative media.
 
-Click the link to see the [Project Guidelines](https://github.com/SchoolOfCode/project-guidelines/blob/master/project-week.md)
+**This documentation is for the entire Mindactivity app. If you're interested in the backend/API specifically, go to https://github.com/SchoolOfCode/w9_backend-project-mindactivity**
+## Features
+- Timer for meditation or exercise.
+- Music button playing calming nature sounds.
+- Daily affirmations randomised and displayed from database.
+- Blog posts also randomised and displayed from database.
+- Click- and hover-interactive background simulating a night sky.
+## Getting Started
+I. Backend
+**It is important to get the backend working before you run the frontend in order to use the affirmations and the blog post features*
+1. Git clone the backend repository.
+```bash
+  git clone https://github.com/SchoolOfCode/w9_backend-project-mindactivity
+```
+2. Install all the dependencies by running this command:
+```bash
+  npm i
+```
+3. Copy your database (e.g. Heroku) URL into the .env file, following the format:
+```bash
+ DATABASE_URL = <Database URL goes here>
+```
+4. Create the table in your database by running this script in the terminal:
+```bash
+npm run db:createTable
+```
+5. Populate the table you have just created by running this script in the terminal:
+```
+npm run db:populateTable
+```
+6. Run the server with this command in the terminal:
+```bash
+  npm run dev
+```
+II. Frontend
+
+1. Git clone the frontend repository.
+```bash
+  git clone https://github.com/SchoolOfCode/w9_backend-project-mindactivity
+```
+2. Install the dependencies by running this command in the terminal.  
+```bash
+  npm i
+```
+3. Navigate to this folder w9_frontend-project-mindactivity/Mindactivity
+
+4. Start the app.
+```bash
+  npm start
+```
+
+## Tech Stack
+**Client:** React, CSS, Howler, React-tsparticles
+**Server:** Node, Express, PostreSQL
+**Client-side Testing ** React Testing Library
+**Server-side Testing** Supertest, Jest
+## Color Reference
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Xiketic | ![#131224](https://via.placeholder.com/10/131224?text=+) #131224 |
+| Oxford Blue | ![#F8F8F8](https://via.placeholder.com/10/0C1445?text=+) #0C1445 |
+| Liberty | ![#00B48A](https://via.placeholder.com/10/5C54A4?text=+) #5C54A4 |
+| Rhythm | ![#00D1A0](https://via.placeholder.com/10/8380A4?text=+) #8380A4 |
+| Melon | ![#00D1A0](https://via.placeholder.com/10/FFB7A2E8?text=+) #FFB7A2E8 |
+| Puce | ![#C3809A](https://via.placeholder.com/10/C3809A?text=+) #C3809A |
+| Sandy Brown | ![#FBA55A](https://via.placeholder.com/10/FBA55A?text=+) #FBA55A |
+
+
+
+## Running Tests
+To run tests, run the following command
+```bash
+  npm test
+```
+
+## Authors
+
+We are four bootcampers at @theSchoolOfCode who teamed up to build an app to help solve bootcamper burnout problem for our mid-course project.
+
+- [@AureaFlamma](https://www.github.com/AureaFlamma)
+- [@EdMark11](https://www.github.com/EdMark11)
+- [@anastasia-starostina](https://www.github.com/anastasia-starostina)
+- [@Sadie109](https://www.github.com/Sadie109)
+
+
+
+## Acknowledgements
+</br>
+
+- [TSParticles Package](https://www.npmjs.com/package/express-generator-esmodules))
