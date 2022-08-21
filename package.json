@@ -12,6 +12,7 @@
     "react-scripts": "5.0.1",
     "react-timer-hook": "^3.0.5",
     "react-tsparticles": "^2.2.2",
+    "tsparticles": "^2.2.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
