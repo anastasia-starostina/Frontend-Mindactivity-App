@@ -20,7 +20,9 @@ function App() {
   }, []);
 
   const fetchAffirmations = async () => {
-    const response = await fetch("http://localhost:3001/v1/mindactivity");
+    const response = await fetch(
+      "https://week-9-project.herokuapp.com/v1/mindactivity"
+    );
     const data = await response.json();
     // console.log(`this is data: ${data}`);
     setAffirmations([...data.payload]);
@@ -28,7 +30,9 @@ function App() {
 
 
   const fetchBlogs = async () => {
-    const response = await fetch("http://localhost:3001/v1/blogs");
+    const response = await fetch(
+      "https://week-9-project.herokuapp.com/v1/blogs"
+    );
     const data = await response.json();
     setBlogs([...data.payload]);
   };
