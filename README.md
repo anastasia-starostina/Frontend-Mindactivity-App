@@ -133,15 +133,17 @@ npm run db:populateTable
 
 
 ## ***Color Reference🎨***
+
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Xiketic | ![#131224](https://via.placeholder.com/10/131224?text=+) #131224 |
-| Oxford Blue | ![#F8F8F8](https://via.placeholder.com/10/0C1445?text=+) #0C1445 |
-| Liberty | ![#00B48A](https://via.placeholder.com/10/5C54A4?text=+) #5C54A4 |
-| Rhythm | ![#00D1A0](https://via.placeholder.com/10/8380A4?text=+) #8380A4 |
-| Melon | ![#00D1A0](https://via.placeholder.com/10/FFB7A2E8?text=+) #FFB7A2E8 |
-| Puce | ![#C3809A](https://via.placeholder.com/10/C3809A?text=+) #C3809A |
-| Sandy Brown | ![#FBA55A](https://via.placeholder.com/10/FBA55A?text=+) #FBA55A |
+| Xiketic | ![#0C020F](https://via.placeholder.com/10/0C020F/0C020F.png) #0C020F |
+| Oxford Blue | ![#F8F8F8](https://via.placeholder.com/10/0C1445/0C1445.png) #0C1445 |
+| Liberty | ![#00B48A](https://via.placeholder.com/10/5C54A4/5C54A4.png) #5C54A4 |
+| Rhythm | ![#00D1A0](https://via.placeholder.com/10/8380A4/8380A4.png) #8380A4 |
+| Melon | ![#00D1A0](https://via.placeholder.com/10/FFB7A2E8/FFB7A2E8.png) #FFB7A2E8 |
+| Puce | ![#C3809A](https://via.placeholder.com/10/C3809A/C3809A.png) #C3809A |
+| Sandy Brown | ![#FBA55A](https://via.placeholder.com/10/FBA55A/FBA55A.png) #FBA55A |
+
 
 
 <br/>
